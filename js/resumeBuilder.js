@@ -110,10 +110,11 @@ var projects = {
 		"dates": "Sep 2015",
 		"description": "Create a simple About Me page using HTML and CSS",
 		"images": [
-			{
-				"url": "https://www.github.com"
-			}
+		{
+			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
+		}
 		]
+		
 	},
 
 	{
@@ -121,10 +122,12 @@ var projects = {
 		"dates": "Sep 2015",
 		"description": "Create a responsive Portfolio page using HTML, CSS and Bootstrap.",
 		"images": [
-			{
-				"url": "https://www.github.com"
-			}
+		{
+			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
+		}
 		]
+		
+		
 	}
 
 
@@ -158,7 +161,7 @@ if(bio.skills.length > 0){
 
 
 
-function displayWork(){
+work.display = function(){
 	for(job in work.jobs){
 	$("#workExperience").append(HTMLworkStart);
 
@@ -176,7 +179,7 @@ function displayWork(){
 };
 };
 
-displayWork();
+work.display();
 
 // .append() the internationalize button to the main div
 $("#main").append(internationalizeButton);
@@ -207,7 +210,7 @@ projects.display = function(){
 
 		if(projects.projects[project].images.length > 0){
 			for(image in projects.projects[project].images){
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image].url);
 				$(".project-entry:last").append(formattedImage);
 			}
 			
@@ -218,6 +221,60 @@ projects.display = function(){
 };
 
 projects.display();
+
+//Create a funciton that displays all education (schools + details) in correct format
+
+education.display = function(){
+	for(school in education.schools){
+		$("#education").append(HTMLschoolStart);
+
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+		$(".education-entry:last").append(formattedName);
+
+		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+		$(".education-entry:last").append(formattedDegree);
+
+		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+		$(".education-entry:last").append(formattedDates);
+
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").append(formattedLocation);
+
+		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+		$(".education-entry:last").append(formattedMajors);
+		
+		}
+
+	if(education.onlineCourses.length > 0) {
+		$("#education").append(HTMLonlineClasses);
+		$("#education").append(HTMLschoolStart);
+		for(course in education.onlineCourses){
+
+			
+
+			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+			$(".education-entry:last").append(formattedTitle);
+
+			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+			$(".education-entry:last").append(formattedSchool);
+
+			var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+			$(".education-entry:last").append(formattedDates);
+
+			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
+			$(".education-entry:last").append(formattedURL);
+
+
+		}
+	
+
+	}
+
+		
+	
+}
+
+education.display();
 
 //Google Map
 $("#mapDiv").append(googleMap);
