@@ -1,5 +1,5 @@
 
-//create bio JSON
+// bio JSON
 var bio = {
 	"name" : "Ali Naqvi",
 	"role" : "Web Developer",
@@ -15,7 +15,7 @@ var bio = {
 	"skills" : ["digital marketing", "web development", "business development"]
 };
 
-//create work JSON
+//work JSON
 var work = {
 	"jobs": [
 	{
@@ -54,7 +54,7 @@ var work = {
 	
 };
 
-//create education JSON
+//education JSON
 var education = {
 	"schools": [
 		{
@@ -79,7 +79,7 @@ var education = {
 			"degree": "High School Diploma",
 			"dates": "2001-2004",
 			"location": "Singapore",
-			"majors": "Communication Studies"	
+			"majors": "N/A"	
 
 		}
 
@@ -102,6 +102,8 @@ var education = {
 	]
 	
 };
+
+//projects JSON
 
 var projects = {
 	"projects": [
@@ -135,8 +137,7 @@ var projects = {
 };
 
 
-
-//Write an if statement which populates the div with the id=topContacts with contact info if not empty
+//bio display function
 
 bio.display = function(){
 
@@ -152,18 +153,18 @@ bio.display = function(){
 
 	if(bio.biopic.length > 0){
 		var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-		$("#header").append(formattedBioPic);
+		$("#bioPic").append(formattedBioPic);
 	}
 
 	if(bio.welcomemsg.length > 0){
 		var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomemsg);
-		$("#header").append(formattedWelcomeMsg);
+		$("#message").append(formattedWelcomeMsg);
 	}
 
 
 	if(bio.skills.length > 0){
-		$("#header").append(HTMLskillsStart);
-		for(skill in bio.skills){
+		$("#message").append(HTMLskillsStart);
+		for(var skill in bio.skills){
 			if(skill.length > 0){
 				$("#skills:last").append(HTMLskills.replace("%data%", bio.skills[skill]));
 			}
@@ -212,7 +213,7 @@ bio.display();
 
 
 work.display = function(){
-	for(job in work.jobs){
+	for( var job in work.jobs){
 	$("#workExperience").append(HTMLworkStart);
 
 	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -232,7 +233,7 @@ work.display = function(){
 work.display();
 
 // .append() the internationalize button to the main div
-$("#main").append(internationalizeButton);
+/*$("#main").append(internationalizeButton);
 
 //Create a function called inName() that takes in a string of two names and returns an internationalized 
 //string that looks like so: Ali NAQVI
@@ -243,10 +244,10 @@ function inName(name){
 
 	return name[0] + " " + name[1];
 
-}
+}*/
 
 projects.display = function(){
-	for(project in projects.projects){
+	for(var project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
 		
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -259,7 +260,7 @@ projects.display = function(){
 		$(".project-entry:last").append(formattedDescription);
 
 		if(projects.projects[project].images.length > 0){
-			for(image in projects.projects[project].images){
+			for(var image in projects.projects[project].images){
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image].url);
 				$(".project-entry:last").append(formattedImage);
 			}
@@ -275,7 +276,7 @@ projects.display();
 //Create a funciton that displays all education (schools + details) in correct format
 
 education.display = function(){
-	for(school in education.schools){
+	for(var school in education.schools){
 		$("#education").append(HTMLschoolStart);
 
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
@@ -298,7 +299,7 @@ education.display = function(){
 	if(education.onlineCourses.length > 0) {
 		$("#education").append(HTMLonlineClasses);
 		$("#education").append(HTMLschoolStart);
-		for(course in education.onlineCourses){
+		for(var course in education.onlineCourses){
 
 			
 
