@@ -134,26 +134,76 @@ var projects = {
 	]
 };
 
-//Append formatted header element to the page
-
-//$("#header").prepend(HTMLbioPic.replace("%data%", bio.biopic));
-$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
-$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
 
 
-//write an if statement to check whether there are any skills in the bio object
-//If the if statement evaluates to true, .append() HTMLskillsStart to the div with the id=header
-//Then .append() the skills to the element with the id=skills using HTMLskills to format each skill
+//Write an if statement which populates the div with the id=topContacts with contact info if not empty
 
-if(bio.skills.length > 0){
-	$("#header").append(HTMLskillsStart);
-	for(skill in bio.skills){
-		if(skill.length > 0){
-			$("#skills").append(HTMLskills.replace("%data%", bio.skills[skill]));
-		};
-	};
+bio.display = function(){
 
-};
+	if(bio.role.length > 0){
+		var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.role);
+		$("#header").prepend(formattedHeaderRole);
+	}
+
+	if(bio.name.length > 0){
+		var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
+		$("#header").prepend(formattedHeaderName);
+	}
+
+	if(bio.biopic.length > 0){
+		var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
+		$("#header").append(formattedBioPic);
+	}
+
+	if(bio.welcomemsg.length > 0){
+		var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomemsg);
+		$("#header").append(formattedWelcomeMsg);
+	}
+
+
+	if(bio.skills.length > 0){
+		$("#header").append(HTMLskillsStart);
+		for(skill in bio.skills){
+			if(skill.length > 0){
+				$("#skills:last").append(HTMLskills.replace("%data%", bio.skills[skill]));
+			}
+		}
+
+	}
+
+
+	if(bio.contacts.email.length > 0){
+		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+		$("#topContacts").append(formattedEmail);
+	}
+
+	if(bio.contacts.twitter.length > 0){
+		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+		$("#topContacts").append(formattedTwitter);
+	}
+
+	if(bio.contacts.github.length > 0){
+		var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+		$("#topContacts").append(formattedGithub);
+	}
+
+	if(bio.contacts.location.length > 0){
+		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+		$("#topContacts").append(formattedLocation);
+	}
+
+}
+
+
+
+bio.display();
+
+
+
+
+
+
+
 
 //Write a for-in loop that iterates over all the jobs in your work object and .append()s a new HTMLworkStart elemnt for each one and...
 //formats each job's employer with HTMLworkEmployer and each job title with HTMLworkTitle...
@@ -176,8 +226,8 @@ work.display = function(){
 	$(".work-entry:last").append(formattedWorkDates);
 	$(".work-entry:last").append(formattedWorkLocation);
 	$(".work-entry:last").append(formattedWorkDescription);
-};
-};
+}
+}
 
 work.display();
 
@@ -218,7 +268,7 @@ projects.display = function(){
 
 
 	}
-};
+}
 
 projects.display();
 
