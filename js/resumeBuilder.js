@@ -51,7 +51,7 @@ var work = {
 	}
 
 	]
-	
+
 };
 
 //education JSON
@@ -64,7 +64,7 @@ var education = {
 			"location": "Melbourne, Australia",
 			"majors": "Media and Communication"
 		},
-		
+
 		{
 			"name": "TMC Academy",
 			"degree": "Higher Diploma in Mass Communication",
@@ -100,7 +100,7 @@ var education = {
 		"url": "https://www.coursera.com"
 	}
 	]
-	
+
 };
 
 //projects JSON
@@ -116,7 +116,7 @@ var projects = {
 			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
 		}
 		]
-		
+
 	},
 
 	{
@@ -128,8 +128,8 @@ var projects = {
 			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
 		}
 		]
-		
-		
+
+
 	}
 
 
@@ -208,7 +208,7 @@ bio.display();
 
 //Write a for-in loop that iterates over all the jobs in your work object and .append()s a new HTMLworkStart elemnt for each one and...
 //formats each job's employer with HTMLworkEmployer and each job title with HTMLworkTitle...
-//and .append()s a concatenation of employer and title each to the element with class work-entry:last 
+//and .append()s a concatenation of employer and title each to the element with class work-entry:last
 
 
 
@@ -222,7 +222,7 @@ work.display = function(){
 	var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 	var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
 	var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-	
+
 	$(".work-entry:last").append(formattedEmployerTitle);
 	$(".work-entry:last").append(formattedWorkDates);
 	$(".work-entry:last").append(formattedWorkLocation);
@@ -235,7 +235,7 @@ work.display();
 // .append() the internationalize button to the main div
 /*$("#main").append(internationalizeButton);
 
-//Create a function called inName() that takes in a string of two names and returns an internationalized 
+//Create a function called inName() that takes in a string of two names and returns an internationalized
 //string that looks like so: Ali NAQVI
 function inName(name){
 	name = name.trim().split(" ");
@@ -249,7 +249,7 @@ function inName(name){
 projects.display = function(){
 	for(var project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
-		
+
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
 
@@ -264,7 +264,7 @@ projects.display = function(){
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image].url);
 				$(".project-entry:last").append(formattedImage);
 			}
-			
+
 		}
 
 
@@ -293,7 +293,7 @@ education.display = function(){
 
 		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
 		$(".education-entry:last").append(formattedMajors);
-		
+
 		}
 
 	if(education.onlineCourses.length > 0) {
@@ -301,7 +301,7 @@ education.display = function(){
 		$("#education").append(HTMLschoolStart);
 		for(var course in education.onlineCourses){
 
-			
+
 
 			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 			$(".education-entry:last").append(formattedTitle);
@@ -317,16 +317,15 @@ education.display = function(){
 
 
 		}
-	
+
 
 	}
 
-		
-	
+
+
 }
 
 education.display();
 
 //Google Map
 $("#mapDiv").append(googleMap);
-
