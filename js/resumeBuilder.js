@@ -1,52 +1,52 @@
 // bio JSON
 var bio = {
-	'name' : 'Ali Naqvi',
-	'role' : 'Web Developer',
-	'contacts' : {
-		'email' : 'aliqasimnaqvi@gmail.com',
-		'twitter' : 'Ali_Qas',
-		'github' : 'https://github.com/AliQas',
-		'location' : 'London, UK'
+	"name" : "Ali Naqvi",
+	"role" : "Web Developer",
+	"contacts" : {
+		"email" : "aliqasimnaqvi@gmail.com",
+		"twitter" : "Ali_Qas",
+		"github" : "https://github.com/AliQas",
+		"location" : "London, UK"
 	},
 
-	'biopic' : 'images/biopic.jpg',
-	'welcomemsg' : 'Welcome to my resume page!',
-	'skills' : ['digital marketing', 'web development', 'business development']
+	"biopic" : "images/biopic.jpg",
+	"welcomemsg" : "Welcome to my resume page!",
+	"skills" : ["digital marketing", "web development", "business development"]
 };
 
 //work JSON
 var work = {
-	'jobs': [
+	"jobs": [
 	{
-		'title': 'Business Director',
-		'employer': 'Neo@Ogilvy',
-		'dates': 'Jan 2014-Present',
-		'location': 'London, United Kingdom',
-		'description': 'Responsible for cross-channel business development on HSBC account. Oversee a team of 2 Account Managers and 4 Account Executives'
+		"title": "Business Director",
+		"employer": "Neo@Ogilvy",
+		"dates": "Jan 2014-Present",
+		"location": "London, United Kingdom",
+		"description": "Responsible for cross-channel business development on HSBC account. Oversee a team of 2 Account Managers and 4 Account Executives"
 	},
 
 	{
-		'title': 'Senior SEO Account Manager',
-		'employer': 'STEAK, Ltd',
-		'dates': 'Jul 2013-Dec 2013',
-		'location': 'London, United Kingdom',
-		'description': 'Led a team of 3 Account Executives. Oversaw delivery of SEO services to Allianz Insurance, NetJets Global, ETX Capital and Monster'
+		"title": "Senior SEO Account Manager",
+		"employer": "STEAK, Ltd",
+		"dates": "Jul 2013-Dec 2013",
+		"location": "London, United Kingdom",
+		"description": "Led a team of 3 Account Executives. Oversaw delivery of SEO services to Allianz Insurance, NetJets Global, ETX Capital and Monster"
 	},
 
 	{
-		'title': 'SEO Account Manager',
-		'employer': 'STEAK, Ltd',
-		'dates': 'Mar 2012-Jul 2013',
-		'location': 'London, United Kingdom',
-		'description': 'Led a team of 3 Account Executives. Responsible for SEO activity for Allianz Insurance, ETX Capital and NetJets Europe.'
+		"title": "SEO Account Manager",
+		"employer": "STEAK, Ltd",
+		"dates": "Mar 2012-Jul 2013",
+		"location": "London, United Kingdom",
+		"description": "Led a team of 3 Account Executives. Responsible for SEO activity for Allianz Insurance, ETX Capital and NetJets Europe."
 	},
 
 	{
-		'title': 'SEO Account Executive',
-		'employer': 'STEAK, Ltd',
-		'dates': 'Jan 2011-Mar 2012',
-		'location': 'London, United Kingdom',
-		'description': 'Assisted Account Manager in delivering SEO activity for Dixons, PC World, Allianz Insurance and NetJets accounts.'
+		"title": "SEO Account Executive",
+		"employer": "STEAK, Ltd",
+		"dates": "Jan 2011-Mar 2012",
+		"location": "London, United Kingdom",
+		"description": "Assisted Account Manager in delivering SEO activity for Dixons, PC World, Allianz Insurance and NetJets accounts."
 	}
 
 	]
@@ -55,48 +55,48 @@ var work = {
 
 //education JSON
 var education = {
-	'schools': [
+	"schools": [
 		{
-			'name': 'Monash University',
-			'degree': 'Bachelor of Arts in Communication Studies',
-			'dates': '2006-2008',
-			'location': 'Melbourne, Australia',
-			'majors': 'Media and Communication'
+			"name": "Monash University",
+			"degree": "Bachelor of Arts in Communication Studies",
+			"dates": "2006-2008",
+			"location": "Melbourne, Australia",
+			"majors": "Media and Communication"
 		},
 
 		{
-			'name': 'TMC Academy',
-			'degree': 'Higher Diploma in Mass Communication',
-			'dates': '2004-2005',
-			'location': 'Singapore',
-			'majors': 'Communication Studies'
+			"name": "TMC Academy",
+			"degree": "Higher Diploma in Mass Communication",
+			"dates": "2004-2005",
+			"location": "Singapore",
+			"majors": "Communication Studies"
 
 		},
 
 		{
-			'name': 'Singapore American School',
-			'degree': 'High School Diploma',
-			'dates': '2001-2004',
-			'location': 'Singapore',
-			'majors': 'N/A'	
+			"name": "Singapore American School",
+			"degree": "High School Diploma",
+			"dates": "2001-2004",
+			"location": "Singapore",
+			"majors": "N/A"	
 
 		}
 
 	],
 
-	'onlineCourses': [
+	"onlineCourses": [
 	{
-		'school': 'Udacity',
-		'title': 'Frontend Web Developer Nanodegree',
-		'dates': '2015',
-		'url': 'https://www.udacity.com'
+		"school": "Udacity",
+		"title": "Frontend Web Developer Nanodegree",
+		"dates": "2015",
+		"url": "https://www.udacity.com"
 	},
 
 	{
-		'school': 'Coursera',
-		'title': 'Learning How to Learn',
-		'dates': '2015',
-		'url': 'https://www.coursera.com'
+		"school": "Coursera",
+		"title": "Learning How to Learn",
+		"dates": "2015",
+		"url": "https://www.coursera.com"
 	}
 	]
 
@@ -105,28 +105,27 @@ var education = {
 //projects JSON
 
 var projects = {
-	'projects': [
+	"projects": [
 	{
-		'title': 'About Me Page',
-		'dates': 'Sep 2015',
-		'description': 'Create a simple About Me page using HTML and CSS',
-		'images': [
+		"title": "About Me Page",
+		"dates": "Sep 2015",
+		"description": "Create a simple About Me page using HTML and CSS",
+		"images": 
 		{
-			'url': 'http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg'
+			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
 		}
-		]
+		
 
 	},
 
 	{
-		'title': 'Portfolio Page',
-		'dates': 'Sep 2015',
-		'description': 'Create a responsive Portfolio page using HTML, CSS and Bootstrap.',
-		'images': [
+		"title": "Portfolio Page",
+		"dates": "Sep 2015",
+		"description": "Create a responsive Portfolio page using HTML, CSS and Bootstrap.",
+		"images":
 		{
-			'url': 'http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg'
+			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
 		}
-		]
 
 
 	}
@@ -268,11 +267,12 @@ projects.display = function(){
 		var formattedTitle = HTMLprojectTitle.replace(data, project.title);
 		var formattedDates = HTMLprojectDates.replace(data, project.dates);
 		var formattedDescription = HTMLprojectDescription.replace(data, project.description);
-		
-		var allProjectInfo = formattedTitle + formattedDates + formattedDescription;
+		var formattedImage = HTMLprojectImage.replace(data, project.images.url);		
+		var allProjectInfo = formattedTitle + formattedDates + formattedDescription + formattedImage;
 
 		$projects.append(HTMLprojectStart);
-		$('.project-entry:last').append(allProjectInfo);		
+		$('.project-entry:last').append(allProjectInfo);	
+
 
 	});
 
@@ -284,54 +284,41 @@ projects.display();
 
 education.display = function(){
 	'use strict';
-	for(var school in education.schools){
+
+	education.schools.forEach(function(school){
+		var formattedName = HTMLschoolName.replace(data, school.name);
+		var formattedDegree = HTMLschoolDegree.replace(data, school.degree);
+		var formattedDates = HTMLschoolDates.replace(data, school.dates);
+		var formattedLocation = HTMLschoolLocation.replace(data, school.location);
+		var formattedMajors = HTMLschoolMajor.replace(data, school.majors);
+		var allEducationInfo = formattedName + formattedDegree + formattedDates + formattedLocation + formattedMajors;
+
 		$education.append(HTMLschoolStart);
+		$('.education-entry:last').append(allEducationInfo);
 
-		var formattedName = HTMLschoolName.replace(data, education.schools[school].name);
-		$('.education-entry:last').append(formattedName);
-
-		var formattedDegree = HTMLschoolDegree.replace(data, education.schools[school].degree);
-		$('.education-entry:last').append(formattedDegree);
-
-		var formattedDates = HTMLschoolDates.replace(data, education.schools[school].dates);
-		$('.education-entry:last').append(formattedDates);
-
-		var formattedLocation = HTMLschoolLocation.replace(data, education.schools[school].location);
-		$('.education-entry:last').append(formattedLocation);
-
-		var formattedMajors = HTMLschoolMajor.replace(data, education.schools[school].majors);
-		$('.education-entry:last').append(formattedMajors);
-
-		}
-
-	if(education.onlineCourses.length) {
-		$education.append(HTMLonlineClasses);
-		$education.append(HTMLschoolStart);
-		for(var course in education.onlineCourses){
+		});
 
 
+		if(education.onlineCourses.length) {
+			$('.education-entry:last').append(HTMLonlineClasses);
+			education.onlineCourses.forEach(function(course){
 
-			var formattedTitle = HTMLonlineTitle.replace(data, education.onlineCourses[course].title);
-			$('.education-entry:last').append(formattedTitle);
+				var formattedTitle = HTMLonlineTitle.replace(data, course.title);
+				var formattedSchool = HTMLonlineSchool.replace(data, course.school);
+				var formattedOnlineSchoolDates = HTMLonlineDates.replace(data, course.dates);
+				var formattedURL = HTMLonlineURL.replace(data, course.url);
+				var allOnlineCourseInfo = formattedTitle + formattedSchool + formattedOnlineSchoolDates + formattedURL;
 
-			var formattedSchool = HTMLonlineSchool.replace(data, education.onlineCourses[course].school);
-			$('.education-entry:last').append(formattedSchool);
+				$('.education-entry:last').append(allOnlineCourseInfo);
 
-			var formattedOnlineSchoolDates = HTMLonlineDates.replace(data, education.onlineCourses[course].dates);
-			$('.education-entry:last').append(formattedOnlineSchoolDates);
-
-			var formattedURL = HTMLonlineURL.replace(data, education.onlineCourses[course].url);
-			$('.education-entry:last').append(formattedURL);
-
-
-		}
-
-
-	}
+			});
+			
 
 
+			}
 
-};
+
+		};
 
 education.display();
 
