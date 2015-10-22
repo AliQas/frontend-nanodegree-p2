@@ -1,53 +1,52 @@
-
 // bio JSON
 var bio = {
-	"name" : "Ali Naqvi",
-	"role" : "Web Developer",
-	"contacts" : {
-		"email" : "aliqasimnaqvi@gmail.com",
-		"twitter" : "Ali_Qas",
-		"github" : "https://github.com/AliQas",
-		"location" : "London, UK"
+	'name' : 'Ali Naqvi',
+	'role' : 'Web Developer',
+	'contacts' : {
+		'email' : 'aliqasimnaqvi@gmail.com',
+		'twitter' : 'Ali_Qas',
+		'github' : 'https://github.com/AliQas',
+		'location' : 'London, UK'
 	},
 
-	"biopic" : "images/biopic.jpg",
-	"welcomemsg" : "Welcome to my resume page!",
-	"skills" : ["digital marketing", "web development", "business development"]
+	'biopic' : 'images/biopic.jpg',
+	'welcomemsg' : 'Welcome to my resume page!',
+	'skills' : ['digital marketing', 'web development', 'business development']
 };
 
 //work JSON
 var work = {
-	"jobs": [
+	'jobs': [
 	{
-		"title": "Business Director",
-		"employer": "Neo@Ogilvy",
-		"dates": "Jan 2014-Present",
-		"location": "London, United Kingdom",
-		"description": "Responsible for cross-channel business development on HSBC account. Oversee a team of 2 Account Managers and 4 Account Executives"
+		'title': 'Business Director',
+		'employer': 'Neo@Ogilvy',
+		'dates': 'Jan 2014-Present',
+		'location': 'London, United Kingdom',
+		'description': 'Responsible for cross-channel business development on HSBC account. Oversee a team of 2 Account Managers and 4 Account Executives'
 	},
 
 	{
-		"title": "Senior SEO Account Manager",
-		"employer": "STEAK, Ltd",
-		"dates": "Jul 2013-Dec 2013",
-		"location": "London, United Kingdom",
-		"description": "Led a team of 3 Account Executives. Oversaw delivery of SEO services to Allianz Insurance, NetJets Global, ETX Capital and Monster"
+		'title': 'Senior SEO Account Manager',
+		'employer': 'STEAK, Ltd',
+		'dates': 'Jul 2013-Dec 2013',
+		'location': 'London, United Kingdom',
+		'description': 'Led a team of 3 Account Executives. Oversaw delivery of SEO services to Allianz Insurance, NetJets Global, ETX Capital and Monster'
 	},
 
 	{
-		"title": "SEO Account Manager",
-		"employer": "STEAK, Ltd",
-		"dates": "Mar 2012-Jul 2013",
-		"location": "London, United Kingdom",
-		"description": "Led a team of 3 Account Executives. Responsible for SEO activity for Allianz Insurance, ETX Capital and NetJets Europe."
+		'title': 'SEO Account Manager',
+		'employer': 'STEAK, Ltd',
+		'dates': 'Mar 2012-Jul 2013',
+		'location': 'London, United Kingdom',
+		'description': 'Led a team of 3 Account Executives. Responsible for SEO activity for Allianz Insurance, ETX Capital and NetJets Europe.'
 	},
 
 	{
-		"title": "SEO Account Executive",
-		"employer": "STEAK, Ltd",
-		"dates": "Jan 2011-Mar 2012",
-		"location": "London, United Kingdom",
-		"description": "Assisted Account Manager in delivering SEO activity for Dixons, PC World, Allianz Insurance and NetJets accounts."
+		'title': 'SEO Account Executive',
+		'employer': 'STEAK, Ltd',
+		'dates': 'Jan 2011-Mar 2012',
+		'location': 'London, United Kingdom',
+		'description': 'Assisted Account Manager in delivering SEO activity for Dixons, PC World, Allianz Insurance and NetJets accounts.'
 	}
 
 	]
@@ -56,48 +55,48 @@ var work = {
 
 //education JSON
 var education = {
-	"schools": [
+	'schools': [
 		{
-			"name": "Monash University",
-			"degree": "Bachelor of Arts in Communication Studies",
-			"dates": "2006-2008",
-			"location": "Melbourne, Australia",
-			"majors": "Media and Communication"
+			'name': 'Monash University',
+			'degree': 'Bachelor of Arts in Communication Studies',
+			'dates': '2006-2008',
+			'location': 'Melbourne, Australia',
+			'majors': 'Media and Communication'
 		},
 
 		{
-			"name": "TMC Academy",
-			"degree": "Higher Diploma in Mass Communication",
-			"dates": "2004-2005",
-			"location": "Singapore",
-			"majors": "Communication Studies"
+			'name': 'TMC Academy',
+			'degree': 'Higher Diploma in Mass Communication',
+			'dates': '2004-2005',
+			'location': 'Singapore',
+			'majors': 'Communication Studies'
 
 		},
 
 		{
-			"name": "Singapore American School",
-			"degree": "High School Diploma",
-			"dates": "2001-2004",
-			"location": "Singapore",
-			"majors": "N/A"	
+			'name': 'Singapore American School',
+			'degree': 'High School Diploma',
+			'dates': '2001-2004',
+			'location': 'Singapore',
+			'majors': 'N/A'	
 
 		}
 
 	],
 
-	"onlineCourses": [
+	'onlineCourses': [
 	{
-		"school": "Udacity",
-		"title": "Frontend Web Developer Nanodegree",
-		"dates": "2015",
-		"url": "https://www.udacity.com"
+		'school': 'Udacity',
+		'title': 'Frontend Web Developer Nanodegree',
+		'dates': '2015',
+		'url': 'https://www.udacity.com'
 	},
 
 	{
-		"school": "Coursera",
-		"title": "Learning How to Learn",
-		"dates": "2015",
-		"url": "https://www.coursera.com"
+		'school': 'Coursera',
+		'title': 'Learning How to Learn',
+		'dates': '2015',
+		'url': 'https://www.coursera.com'
 	}
 	]
 
@@ -106,26 +105,26 @@ var education = {
 //projects JSON
 
 var projects = {
-	"projects": [
+	'projects': [
 	{
-		"title": "About Me Page",
-		"dates": "Sep 2015",
-		"description": "Create a simple About Me page using HTML and CSS",
-		"images": [
+		'title': 'About Me Page',
+		'dates': 'Sep 2015',
+		'description': 'Create a simple About Me page using HTML and CSS',
+		'images': [
 		{
-			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
+			'url': 'http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg'
 		}
 		]
 
 	},
 
 	{
-		"title": "Portfolio Page",
-		"dates": "Sep 2015",
-		"description": "Create a responsive Portfolio page using HTML, CSS and Bootstrap.",
-		"images": [
+		'title': 'Portfolio Page',
+		'dates': 'Sep 2015',
+		'description': 'Create a responsive Portfolio page using HTML, CSS and Bootstrap.',
+		'images': [
 		{
-			"url": "http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg"
+			'url': 'http://wisemansay.co.uk/wp-content/uploads/2010/12/1249995657_27631-400x200.jpg'
 		}
 		]
 
@@ -136,64 +135,88 @@ var projects = {
 	]
 };
 
+//Create Global Variables for reusable objects
+
+//JQuery selectors for main divs
+
+var $header = $('#header');
+var $topContacts = $('#topContacts');
+var $workExperience = $('#workExperience');
+var $projects = $('#projects');
+var $education = $('#education');
+var $mapDiv = $('#mapDiv');
+var $footerContacts = $('#footerContacts');
+
+
+
+var data = '%data%';
+
+
+
+
 
 //bio display function
 
 bio.display = function(){
+	'use strict';
 
-	if(bio.role.length > 0){
-		var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.role);
-		$("#header").prepend(formattedHeaderRole);
+	if(bio.role.length){
+		var formattedHeaderRole = HTMLheaderRole.replace(data, bio.role);
+		$header.prepend(formattedHeaderRole);
 	}
 
-	if(bio.name.length > 0){
-		var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
-		$("#header").prepend(formattedHeaderName);
+	if(bio.name.length){
+		var formattedHeaderName = HTMLheaderName.replace(data, bio.name);
+		$header.prepend(formattedHeaderName);
 	}
 
-	if(bio.biopic.length > 0){
-		var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-		$("#bioPic").append(formattedBioPic);
+	if(bio.biopic.length){
+		var formattedBioPic = HTMLbioPic.replace(data, bio.biopic);
+		$header.append(formattedBioPic);
 	}
 
-	if(bio.welcomemsg.length > 0){
-		var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomemsg);
-		$("#message").append(formattedWelcomeMsg);
+	if(bio.welcomemsg.length){
+		var formattedWelcomeMsg = HTMLWelcomeMsg.replace(data, bio.welcomemsg);
+		$header.append(formattedWelcomeMsg);
 	}
 
 
-	if(bio.skills.length > 0){
-		$("#message").append(HTMLskillsStart);
+	if(bio.skills.length){
+		$header.append(HTMLskillsStart);
 		for(var skill in bio.skills){
-			if(skill.length > 0){
-				$("#skills:last").append(HTMLskills.replace("%data%", bio.skills[skill]));
+			if(skill.length){
+				$('#skills:last').append(HTMLskills.replace(data, bio.skills[skill]));
 			}
 		}
 
 	}
 
 
-	if(bio.contacts.email.length > 0){
-		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-		$("#topContacts").append(formattedEmail);
+	if(bio.contacts.email.length){
+		var formattedEmail = HTMLemail.replace(data, bio.contacts.email);
+		$topContacts.append(formattedEmail);
+		$footerContacts.append(formattedEmail);
 	}
 
-	if(bio.contacts.twitter.length > 0){
-		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-		$("#topContacts").append(formattedTwitter);
+	if(bio.contacts.twitter.length){
+		var formattedTwitter = HTMLtwitter.replace(data, bio.contacts.twitter);
+		$topContacts.append(formattedTwitter);
+		$footerContacts.append(formattedTwitter);
 	}
 
-	if(bio.contacts.github.length > 0){
-		var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-		$("#topContacts").append(formattedGithub);
+	if(bio.contacts.github.length){
+		var formattedGithub = HTMLgithub.replace(data, bio.contacts.github);
+		$topContacts.append(formattedGithub);
+		$footerContacts.append(formattedGithub);
 	}
 
-	if(bio.contacts.location.length > 0){
-		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-		$("#topContacts").append(formattedLocation);
+	if(bio.contacts.location.length){
+		var formattedLocation = HTMLlocation.replace(data, bio.contacts.location);
+		$topContacts.append(formattedLocation);
+		$footerContacts.append(formattedLocation);
 	}
 
-}
+};
 
 
 
@@ -213,107 +236,92 @@ bio.display();
 
 
 work.display = function(){
-	for( var job in work.jobs){
-	$("#workExperience").append(HTMLworkStart);
+	
+	'use strict';
 
-	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-	var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-	var formattedEmployerTitle = formattedEmployer + formattedTitle;
-	var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-	var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-	var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+	
+	work.jobs.forEach(function(job){
+		
+		var formattedEmployer = HTMLworkEmployer.replace(data, job.employer);
+		var formattedTitle = HTMLworkTitle.replace(data, job.title);
+		var formattedWorkDates = HTMLworkDates.replace(data, job.dates);
+		var formattedWorkLocation = HTMLworkLocation.replace(data, job.location);
+		var formattedWorkDescription = HTMLworkDescription.replace(data, job.description);
+		var allJobInfo = formattedEmployer + formattedTitle + formattedWorkDates + formattedWorkLocation + formattedWorkDescription;
 
-	$(".work-entry:last").append(formattedEmployerTitle);
-	$(".work-entry:last").append(formattedWorkDates);
-	$(".work-entry:last").append(formattedWorkLocation);
-	$(".work-entry:last").append(formattedWorkDescription);
-}
-}
+		$workExperience.append(HTMLworkStart);
+		$('.work-entry:last').append(allJobInfo);
+
+	});
+
+};
 
 work.display();
 
-// .append() the internationalize button to the main div
-/*$("#main").append(internationalizeButton);
-
-//Create a function called inName() that takes in a string of two names and returns an internationalized
-//string that looks like so: Ali NAQVI
-function inName(name){
-	name = name.trim().split(" ");
-	name[1] = name[1].toUpperCase();
-	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-
-	return name[0] + " " + name[1];
-
-}*/
 
 projects.display = function(){
-	for(var project in projects.projects){
-		$("#projects").append(HTMLprojectStart);
+	
+	'use strict';
 
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$(".project-entry:last").append(formattedTitle);
+	projects.projects.forEach(function(project){
 
-		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates );
-		$(".project-entry:last").append(formattedDates);
+		var formattedTitle = HTMLprojectTitle.replace(data, project.title);
+		var formattedDates = HTMLprojectDates.replace(data, project.dates);
+		var formattedDescription = HTMLprojectDescription.replace(data, project.description);
+		
+		var allProjectInfo = formattedTitle + formattedDates + formattedDescription;
 
-		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$(".project-entry:last").append(formattedDescription);
+		$projects.append(HTMLprojectStart);
+		$('.project-entry:last').append(allProjectInfo);		
 
-		if(projects.projects[project].images.length > 0){
-			for(var image in projects.projects[project].images){
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image].url);
-				$(".project-entry:last").append(formattedImage);
-			}
+	});
 
-		}
-
-
-	}
-}
+};
 
 projects.display();
 
-//Create a funciton that displays all education (schools + details) in correct format
+//Create a function that displays all education (schools + details) in correct format
 
 education.display = function(){
+	'use strict';
 	for(var school in education.schools){
-		$("#education").append(HTMLschoolStart);
+		$education.append(HTMLschoolStart);
 
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		$(".education-entry:last").append(formattedName);
+		var formattedName = HTMLschoolName.replace(data, education.schools[school].name);
+		$('.education-entry:last').append(formattedName);
 
-		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		$(".education-entry:last").append(formattedDegree);
+		var formattedDegree = HTMLschoolDegree.replace(data, education.schools[school].degree);
+		$('.education-entry:last').append(formattedDegree);
 
-		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		$(".education-entry:last").append(formattedDates);
+		var formattedDates = HTMLschoolDates.replace(data, education.schools[school].dates);
+		$('.education-entry:last').append(formattedDates);
 
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		$(".education-entry:last").append(formattedLocation);
+		var formattedLocation = HTMLschoolLocation.replace(data, education.schools[school].location);
+		$('.education-entry:last').append(formattedLocation);
 
-		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
-		$(".education-entry:last").append(formattedMajors);
+		var formattedMajors = HTMLschoolMajor.replace(data, education.schools[school].majors);
+		$('.education-entry:last').append(formattedMajors);
 
 		}
 
-	if(education.onlineCourses.length > 0) {
-		$("#education").append(HTMLonlineClasses);
-		$("#education").append(HTMLschoolStart);
+	if(education.onlineCourses.length) {
+		$education.append(HTMLonlineClasses);
+		$education.append(HTMLschoolStart);
 		for(var course in education.onlineCourses){
 
 
 
-			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
-			$(".education-entry:last").append(formattedTitle);
+			var formattedTitle = HTMLonlineTitle.replace(data, education.onlineCourses[course].title);
+			$('.education-entry:last').append(formattedTitle);
 
-			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-			$(".education-entry:last").append(formattedSchool);
+			var formattedSchool = HTMLonlineSchool.replace(data, education.onlineCourses[course].school);
+			$('.education-entry:last').append(formattedSchool);
 
-			var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
-			$(".education-entry:last").append(formattedDates);
+			var formattedOnlineSchoolDates = HTMLonlineDates.replace(data, education.onlineCourses[course].dates);
+			$('.education-entry:last').append(formattedOnlineSchoolDates);
 
-			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
-			$(".education-entry:last").append(formattedURL);
+			var formattedURL = HTMLonlineURL.replace(data, education.onlineCourses[course].url);
+			$('.education-entry:last').append(formattedURL);
 
 
 		}
@@ -323,9 +331,9 @@ education.display = function(){
 
 
 
-}
+};
 
 education.display();
 
 //Google Map
-$("#mapDiv").append(googleMap);
+$mapDiv.append(googleMap);
